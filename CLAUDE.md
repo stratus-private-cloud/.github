@@ -274,9 +274,8 @@ Working:
   calendar of its own -- and a query by date finds them by RFC 4791's rules,
   which the library applies to events alone (stratus-backend#79). A client makes, renames, paints and deletes
   its calendars -- `MKCALENDAR`, `PROPPATCH`, `DELETE` -- all answered in front
-  of a library that routes none of them (stratus-backend#399). Proved with
-  go-webdav's own client; no real one has been pointed at it yet, which is
-  what still holds #399 open. A client syncs by token (`sync-collection`), answered
+  of a library that routes none of them (stratus-backend#399). DAVx5 has
+  synced it both ways. A client syncs by token (`sync-collection`), answered
   in front of the library from a counter and tombstones the schema keeps;
   a deletion is remembered thirty days, after which a stale token costs the
   client one listing.
