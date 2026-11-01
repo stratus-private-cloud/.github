@@ -285,8 +285,7 @@ Working:
   calendars' twin: `/.well-known/carddav`, an address book called `contacts`
   made on first look, the vCard stored as the server encodes it, conditional
   writes in one transaction, a search that ignores case, and sync by token
-  through the same code the calendars use. Proved with go-webdav's own client;
-  #423 stays open until DAVx5 has synced it both ways.
+  through the same code the calendars use. DAVx5 has synced it both ways.
 
 - A folder on the machine's own disk, `STRATUS_INCOMING_DIR`, that empties
   itself into the library: the door for what speaks none of the protocols, a
