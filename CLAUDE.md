@@ -330,8 +330,9 @@ the browser for its own. **And the contacts too**, the same way: an address
 book is a list by name at its own address, and a contact is added, edited and
 deleted from forms that change only what they show of the vCard, so a web edit
 never strips what a phone put there (stratus-backend#442). Events are written
-the same way (stratus-backend#444), a repeating one as a whole series; one
-instance on its own is stratus-backend#445.
+the same way (stratus-backend#444), and a repeating one as a whole series or
+one occurrence at a time, with a simple rule to make one repeat
+(stratus-backend#445).
 
 **Most settings can be changed from the web UI** (stratus-backend#397): a
 Settings page in the user menu for the intervals, the trash, the indexer's
