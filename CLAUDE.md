@@ -167,8 +167,9 @@ Working:
   query behind it, newest first, and on request for whatever that has not
   reached -- and kept as derived blobs the same sweep collects.
 - A web UI at `/`: sign in, walk the tree, download a file, upload one, make a
-  folder, rename and delete, and ask any file what is known about it -- the
-  file row's half and the indexer's, by kind, fetched when the button is pressed
+  folder, rename and delete (several at once by ticking their rows, each still
+  a line of its own in the trash: stratus-backend#295), and ask any file what
+  is known about it -- the file row's half and the indexer's, by kind, fetched when the button is pressed
   into a dialog titled with the file's name, and a page of its own without
   JavaScript. The upload streams into the blob store and replaces like a PUT
   does; deleting asks first and then puts it in the trash. A folder arrives a
