@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <!-- Play's feature graphic. The text needs Familjen Grotesk and IBM Plex
+       Sans installed to render; feature-graphic.png is what was uploaded. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5aa0ec"/>
+      <stop offset="1" stop-color="#2c6fb5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="500" fill="url(#sky)"/>
+  <g transform="translate(150,138) scale(4)" fill="#ffffff">
+    <rect x="26" y="14" width="28" height="9" rx="4.5"/>
+    <rect x="10" y="27" width="44" height="9" rx="4.5"/>
+    <rect x="10" y="40" width="28" height="9" rx="4.5"/>
+  </g>
+  <text x="420" y="262" font-family="Familjen Grotesk" font-weight="700" font-size="112" letter-spacing="-2" fill="#ffffff">Stratus</text>
+  <text x="424" y="320" font-family="IBM Plex Sans" font-weight="500" font-size="34" fill="#ffffff" fill-opacity="0.9">Backup to your own server</text>
+</svg>
