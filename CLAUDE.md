@@ -118,8 +118,8 @@ calendars and tasks over CalDAV, and contacts over CardDAV.
 - App: https://github.com/stratus-private-cloud/stratus-app
 - Board: https://github.com/orgs/stratus-private-cloud/projects/1
 - Demo: https://stratus-demo.dropdatabase.es -- the last green `main`, open to
-  anybody, emptied every hour and on every merge. The password is the version
-  string in its own page footer.
+  anybody, emptied every hour and on every merge. Sign in as `demo`, password
+  `stratus-private-cloud`.
 
 Working:
 
