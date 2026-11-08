@@ -11,5 +11,5 @@ container, and standard protocols every existing client already speaks.
 | [.github](https://github.com/stratus-private-cloud/.github) | the workspace: the principles every repo is held to, and the brand |
 
 - Demo: https://stratus-demo.dropdatabase.es -- the last green `main`, emptied
-  every hour. The password is the version string in its own page footer.
+  every hour. Sign in as `demo`, password `stratus-private-cloud`.
 - Board: https://github.com/orgs/stratus-private-cloud/projects/1
