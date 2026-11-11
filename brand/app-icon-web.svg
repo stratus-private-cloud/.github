@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Stratus">
+  <title>Stratus</title>
+  <!-- The web UI's icon, which the manifest and the apple-touch-icon carry.
+       app-icon.svg inverted, the favicon's blue on a pale square, so that
+       the installed web UI and the native app are two icons on one launcher.
+       Not pure white, which vanishes on a white drawer. Same geometry and
+       the same safe circle as app-icon.svg. -->
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7fafd"/>
+      <stop offset="1" stop-color="#e4edf7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#paper)"/>
+  <g transform="translate(64,71) scale(14)" fill="#2c6fb5">
+    <rect x="26" y="14" width="28" height="9" rx="4.5"/>
+    <rect x="10" y="27" width="44" height="9" rx="4.5"/>
+    <rect x="10" y="40" width="28" height="9" rx="4.5"/>
+  </g>
+</svg>
