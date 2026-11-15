@@ -216,7 +216,9 @@ Working:
   keeps it inside a 512 MB machine; nothing about a photograph leaves it. The
   vectors are a table of their own, searched by brute force in Go, because
   only one of the three engines has a vector index and only behind an
-  extension. It is the one ranked part of the search page.
+  extension. It is the one ranked part of the search page. A photograph's details
+  show the ten most like it, with its own vector as the query
+  (stratus-backend#514).
 - A trash at `/trash/`, because deleting a camera roll by accident is the one
   mistake a personal cloud has to survive. A delete moves the rows into a table
   of their own and **touches no bytes at all** -- the blob stays where it was
