@@ -176,9 +176,8 @@ Working:
   hundred rows at a time, paged by a cursor rather than an offset, and the rest
   of it loads as you scroll -- or as a plain link to the next page with
   JavaScript turned off, which is the condition htmx was let in under. Its
-  headings order it by name, size or date and its row count is 50, 100 or 500,
-  both in the URL so an arranged folder is a link somebody can be sent, and both
-  kept in a cookie that is only a default; folders stay at the top whichever
+  headings order it by name, size or date, in the URL so an arranged folder is
+  a link somebody can be sent and kept in a cookie that is only a default; folders stay at the top whichever
   way it points, which is what makes one index serve a key in both directions.
   The session is signed rather than stored, keyed by the configured password,
   so changing it revokes every cookie already issued and a restart revokes
