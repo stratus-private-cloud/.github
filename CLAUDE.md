@@ -206,6 +206,17 @@ Working:
   (stratus-backend#449), matched in Go over what the services list rather
   than indexed by the engines -- a personal calendar is hundreds of objects --
   with the same whole words, and accents ignored as well.
+- **And, opt-in, a photograph by what is in it** (stratus-backend#505):
+  `STRATUS_SEMANTIC_SEARCH=on` reads every photograph's 300-pixel thumbnail
+  with Google's SigLIP 2, in a helper process beside the binary
+  (`stratus-embed`, ONNX Runtime built for the two towers and nothing else), so
+  `perro en la playa` finds the beach whatever language the query is in. The
+  model is 348 MB and a release asset, fetched into the data directory the
+  first time the setting is on and mapped rather than loaded, which is what
+  keeps it inside a 512 MB machine; nothing about a photograph leaves it. The
+  vectors are a table of their own, searched by brute force in Go, because
+  only one of the three engines has a vector index and only behind an
+  extension. It is the one ranked part of the search page.
 - A trash at `/trash/`, because deleting a camera roll by accident is the one
   mistake a personal cloud has to survive. A delete moves the rows into a table
   of their own and **touches no bytes at all** -- the blob stays where it was
