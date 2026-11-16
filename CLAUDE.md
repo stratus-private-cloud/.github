@@ -220,6 +220,13 @@ Working:
   (stratus-backend#514). A new photograph is fetched from the store once for
   its metadata, its pictures and its vector, where it used to cost ten
   requests -- on S3 each one is paid for.
+- **And, opt-in, the people in the photographs** (stratus-backend#519):
+  `STRATUS_FACES=on` finds faces off that same decode with OpenCV's YuNet and
+  SFace, run by the same helper, and groups the ones that look alike into
+  people at `/people/`, where a person is named and two who are the same one
+  merged. It is biometric data, so it stays on the machine and **off deletes
+  it** -- every face, person and name, at once and at every start while it
+  stays off.
 - A trash at `/trash/`, because deleting a camera roll by accident is the one
   mistake a personal cloud has to survive. A delete moves the rows into a table
   of their own and **touches no bytes at all** -- the blob stays where it was
