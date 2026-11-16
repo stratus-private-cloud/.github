@@ -142,7 +142,7 @@ Working:
 - **One WebDAV namespace for the whole origin**, behind HTTP Basic with a
   global rate limit on failed logins, mounted only when credentials are
   configured. The root is a read-only collection listing `calendars/`, `contacts/`,
-  `files/`, `music/`, `photos/`, `playlists/`, `trash/` and `videos/`, and the user's tree is
+  `files/`, `music/`, `people/`, `photos/`, `playlists/`, `trash/` and `videos/`, and the user's tree is
   `/files/` -- which is the same URL the web UI serves a folder and a file at.
   What tells the two protocols apart is the method and nothing else: a browser
   cannot send `PROPFIND` and a WebDAV client does not ask for a listing with
@@ -224,7 +224,7 @@ Working:
   `STRATUS_FACES=on` finds faces off that same decode with OpenCV's YuNet and
   SFace, run by the same helper, and groups the ones that look alike into
   people at `/people/`, where a person is named and two who are the same one
-  merged. It is biometric data, so it stays on the machine and **off deletes
+  merged, and which is a folder per person over WebDAV as well. It is biometric data, so it stays on the machine and **off deletes
   it** -- every face, person and name, at once and at every start while it
   stays off.
 - A trash at `/trash/`, because deleting a camera roll by accident is the one
