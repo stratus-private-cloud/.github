@@ -206,8 +206,8 @@ Working:
   than indexed by the engines -- a personal calendar is hundreds of objects --
   with the same whole words, and accents ignored as well.
 - **And, opt-in, a photograph by what is in it** (stratus-backend#505):
-  `STRATUS_SEMANTIC_SEARCH=on` reads every photograph's 300-pixel thumbnail
-  with Google's SigLIP 2, in a helper process beside the binary
+  `STRATUS_SEMANTIC_SEARCH=on` reads every photograph, off the same decode
+  its thumbnails are made from (stratus-backend#519), with Google's SigLIP 2, in a helper process beside the binary
   (`stratus-embed`, ONNX Runtime built for the two towers and nothing else), so
   `perro en la playa` finds the beach whatever language the query is in. The
   model is 348 MB and a release asset, fetched into the data directory the
@@ -217,7 +217,9 @@ Working:
   only one of the three engines has a vector index and only behind an
   extension. It is the one ranked part of the search page. The gallery's viewer
   shows the ten photographs most like one, with its own vector as the query
-  (stratus-backend#514).
+  (stratus-backend#514). A new photograph is fetched from the store once for
+  its metadata, its pictures and its vector, where it used to cost ten
+  requests -- on S3 each one is paid for.
 - A trash at `/trash/`, because deleting a camera roll by accident is the one
   mistake a personal cloud has to survive. A delete moves the rows into a table
   of their own and **touches no bytes at all** -- the blob stays where it was
