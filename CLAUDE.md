@@ -223,8 +223,9 @@ Working:
 - **And, opt-in, the people in the photographs** (stratus-backend#519):
   `STRATUS_FACES=on` finds faces off that same decode with OpenCV's YuNet and
   SFace, run by the same helper, and groups the ones that look alike into
-  people at `/people/`, where a person is named and two who are the same one
-  merged, and which is a folder per person over WebDAV as well. It is biometric data, so it stays on the machine and **off deletes
+  people at `/people/`, where a person is named, two who are the same one
+  merged and a face that is somebody else taken out for good
+  (stratus-backend#525), and which is a folder per person over WebDAV as well. It is biometric data, so it stays on the machine and **off deletes
   it** -- every face, person and name, at once and at every start while it
   stays off.
 - A trash at `/trash/`, because deleting a camera roll by accident is the one
