@@ -204,7 +204,8 @@ Working:
   service somewhere else. **Events and contacts are in it too**
   (stratus-backend#449), matched in Go over what the services list rather
   than indexed by the engines -- a personal calendar is hundreds of objects --
-  with the same whole words, and accents ignored as well.
+  with the same whole words, and accents ignored as well. With faces on, so
+  is **a person by their name** (stratus-backend#526), leading to their page.
 - **And, opt-in, a photograph by what is in it** (stratus-backend#505):
   `STRATUS_SEMANTIC_SEARCH=on` reads every photograph, off the same decode
   its thumbnails are made from (stratus-backend#519), with Google's SigLIP 2, in a helper process beside the binary
